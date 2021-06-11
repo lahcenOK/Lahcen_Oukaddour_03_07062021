@@ -3,20 +3,22 @@ body{
 }
 
 /*Header*/
-header
-{   
+header{   
+    font-family: 'Shrikhand';
     display: block;
     text-align: center; 
 }
+
 header img{
     width: 200px;
     height: 50px;
 }
 
 #main_Container{
-    width: 100%; 
-    margin: 0;
+   max-width: 100%; 
+   margin: 0;
 }
+
 /* Localisation */
 #local {
     display : flex;
@@ -24,10 +26,10 @@ header img{
     align-items: center;
     background: hsl(0, 0%, 90%);
 }
+
 .local__ville {
     margin-left: 20px;
     font-weight: bold;
-    
 }
  
 /*  Reservation */
@@ -55,11 +57,12 @@ header img{
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background-color:hsl(317, 63%, 75%);
+    background-color:#d36690;
     padding: 15px 30px 0px 30px;
     height: 40px;
     border-radius: 200px;
 }
+
 #reservation .reservation__explore:hover {
     cursor: pointer;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
@@ -85,6 +88,7 @@ header img{
     border-radius: 20px;
     margin: 0 0 0 12px;
 }
+
 #fonction .fonction__numero{
     background-color: #9356DC;
     color: white;
@@ -93,6 +97,7 @@ header img{
     border-radius: 100px;
     margin: 0 1.5rem 0 -12px;
 }
+
 #fonction .foncion__icone { 
     color: #7E7E7E;
     margin: 0px 30px 0px 40px;
@@ -106,36 +111,38 @@ header img{
     cursor: pointer;
     box-shadow: 3px 3px 10px #d3c0c0;
 }
+
  /*Restaurants*/
 
  #Restaurants {
     background-color: #fafafa;
     margin-top: 50px;
-    padding-bottom: 50px;
+   /* padding-bottom: 50px;*/
  }
+
  #Restaurants h2{
     margin-left: 20px;
     padding-top: 20px;
- }
+}
+
 #Restaurants .Box_main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 300px);
     gap: 1rem 1rem;
-    background-color: #fafafa;
-    
-}    
+    background-color: #fafafa;  
+}  
+
 #Restaurants .Box{
-    margin: 20px;
-    border: solid 1px #000;
+     margin: 20px;
     border-radius: 2rem 2rem 2rem 2rem;
 }
+
 #Restaurants  img {
     width:100%;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
     border-radius: 2rem 2rem 0rem 0rem;
- 
 }
 
 .restaurant__carte{
@@ -144,7 +151,8 @@ header img{
     justify-content: center;
     width: 100%; 
     position: relative;
-    }
+}
+
 .restaurant__carte__image{
     width: 100%; 
     display: flex;
@@ -179,29 +187,29 @@ header img{
  #Restaurants a{
     text-decoration: none;
  }
+
  #Restaurants .coeur{
     position: relative;
     margin-right: 20px;
     padding-top: 15px;
-    color: black;  
-    
+    color: black;     
  }
 
  .coeur .coeur__2{
-      display: none;
+    display: none;
  }
  
- a .coeur :hover  .coeur__2 {   
-        display: block;
-        cursor: pointer;
-    
+ .coeur :hover  .coeur__2 {   
+   display: block;
+        cursor: pointer;   
  }
+
 /*footer*/
 footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #464444;
-    
+    background-color: #464444;   
 }
 
 .footer__logo{
@@ -211,23 +219,24 @@ footer {
     font-weight: normal;
     margin: 0 0 0 20px;
 }
+
 footer .Box{
     display: flex; 
-     line-height: 150%;
+    flex-direction: column;
+    line-height: 150%;
 }
 
 footer h4 {
-    display: inline-block;
     padding: 0;
     color :white;
     font-weight: normal;
-    margin: 0 0 0 20px;
-   
+    margin: 0 0 0 20px; 
 }
+
 footer .fas {
-    display: inline-block;  
-margin-right: 15px;
+    margin-right: 10px;
 }
+
 footer .Box :hover {
     cursor: pointer;
     text-decoration-line: underline;
