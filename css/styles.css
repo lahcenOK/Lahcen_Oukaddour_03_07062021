@@ -1,0 +1,57 @@
+/*Animation bouton explore du menu principal*/
+.reservation__explore {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.reservation__explore:hover {
+  transform: scale(1.15);
+}
+
+/*Animation menu restaurant */
+.carte__type__contenu:hover {
+  cursor: pointer;
+}
+.carte__type__contenu:hover .carte__type__menu .carte__type__plats h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte__type__contenu:hover .carte__type__menu .carte__type__plats h4 {
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte__type__contenu:hover .carte__type__menu .carte__type__prix {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte__type__contenu:hover .carte__type__validation {
+  margin-right: 0px;
+  width: 70px;
+  transition: margin-right 0.5s;
+}
+.carte__type__contenu:hover .carte__type__validation .cercle .fas {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

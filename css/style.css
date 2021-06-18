@@ -34,6 +34,7 @@ header img{
  
 /*  Reservation */
 #reservation{ 
+    width: 100%;
     padding-top: 30px;  
     padding-bottom: 30px;
     display:flex; 
@@ -42,6 +43,7 @@ header img{
     align-items: center;   
     background-color:#fafafa ;
 }
+
 #reservation .reservation__titre{
     text-align: center;
     max-width: 250px;
@@ -49,6 +51,7 @@ header img{
 }
 
 #reservation .reservation__decouvre{
+    max-width: 300px;
     text-align: center;
 }
 
@@ -64,7 +67,6 @@ header img{
     padding: 18px 18px;
     border-radius: 30px;
     box-shadow: #9356DC;
-    cursor: pointer; 
 }
 
 #reservation .reservation__explore:hover {
@@ -102,18 +104,25 @@ header img{
     margin: 0 1.5rem 0 -12px;
 }
 
-#fonction .foncion__icone { 
+#fonction .fonction__icone { 
     color: #7E7E7E;
-    margin: 0px 30px 0px 40px;
-}
-
-#fonction .Box:last-child .fas{
-    color: #9356DC;
+    margin: 0px 30px 0px 40px;   
 }
 
 #fonction .Box:hover {
+   cursor: pointer;
+   box-shadow: 3px 3px 10px #d3c0c0;
+}
+#fonction :hover .Box {
+    color: #9356DC;
+    cursor: pointer; 
+}
+ #fonction :hover .fonction__icone {
+    color: #9356DC;
     cursor: pointer;
-    box-shadow: 3px 3px 10px #d3c0c0;
+}
+ #fonction :hover .fonction__icone .fas {
+    color: #9356DC; 
 }
 
  /*Restaurants*/
@@ -121,7 +130,6 @@ header img{
  #Restaurants {
     background-color: #fafafa;
     margin-top: 50px;
-   /* padding-bottom: 50px;*/
  }
 
  #Restaurants h2{
@@ -197,30 +205,34 @@ header img{
     display: flex;
     align-items: center;
     align-content: center;
-    margin-right: 20px;
+    margin-right: 60px;
     padding-top: 15px;
-    color: black;     
+    color: black;  
  }
 
- .fa-heart {
-    /*color: #FFF;*/
-  border: black;
-    border-radius: 50%;
-    padding:.2em;
-}/*
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;}*/
-
- .fa-heart:hover::before{
-    color: red;cursor: pointer;
-    z-index: 1;
+.coeur__2{
+    font-size: 1px;
+    position: absolute;
+    z-index: 2;
+    color: white; 
+     
+    }
+.coeur__1{
+    font-size: 15px;
+    position: absolute;  
 }
-    
+
+.coeur:hover .coeur__2{
+    font-size: 15px;
+    color: #da70d6;
+    animation: fadein 3s;
+}
+.coeur:hover .coeur__1{
+    opacity: 0;
+}
 
 
-/*footer*/
+    /*footer*/
 footer {
     width: 100%;
     display: flex;
@@ -257,3 +269,33 @@ footer .Box :hover {
     cursor: pointer;
     text-decoration-line: underline;
 }
+@media (min-width:800px)
+{
+    #Restaurants .Box_main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        gap: 1rem 1rem;
+    }
+    #fonction{
+         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fonction h2{
+            width: 100%;
+            margin-bottom: 0px;
+    }
+    #fonction .Box{
+            width: 31%;
+    }
+}
+    
+
+/*@media screen and (max-width: 1000px) and (min-width: 800px)
+display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 1rem 1rem;
+    background-color: #fafafa;  
+}  */
