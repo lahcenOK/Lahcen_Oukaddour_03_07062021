@@ -224,13 +224,12 @@ header img{
 
 .coeur:hover .coeur__2{
     font-size: 15px;
-    color: #da70d6;
-    animation: fadein 3s;
+    color: #C968DB;
+    animation: fadeinc 3s;
 }
 .coeur:hover .coeur__1{
     opacity: 0;
 }
-
 
     /*footer*/
 footer {
@@ -278,7 +277,7 @@ footer .Box :hover {
         gap: 1rem 1rem;
     }
     #fonction{
-         display: flex;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }

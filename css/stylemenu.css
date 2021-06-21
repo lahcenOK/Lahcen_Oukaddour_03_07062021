@@ -75,10 +75,34 @@ header .fas{
   font-weight: normal; 
 }
 
-.cartes__titre .far {
+.cartes__titre__coeur{
+  position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  align-content: center;
+  margin-right: 60px;
+  color: black;  
+}
+
+.cartes__titre__coeur .fas{
+  font-size: 1px;
+  position: absolute;
+  z-index: 2;
+  color: white; 
+   
+  }
+  .cartes__titre__coeur .far{
+  font-size: 30px;
+  position: absolute;  
+}
+
+.cartes__titre__coeur:hover .fas{
+  font-size: 30px;
+  color: #C968DB;
+  animation: fadeinc 3s;
+}
+.cartes__titre__coeur:hover .far{
+  opacity: 0;
 }
 
 .cartes__liste{
@@ -102,6 +126,7 @@ header .fas{
   border-bottom-width: 10px;
 }
 
+/*soulignement vert du titre */
 .carte__type h2::after {
   content: "";
   display: block;
@@ -120,6 +145,7 @@ header .fas{
   background-color: white;
   border-radius: 15px;
   overflow: hidden; 
+  
 }
 
 .carte__type__menu{

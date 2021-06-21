@@ -1,0 +1,12 @@
+{
+  "name": "oukaddourlahcen_3_07062021",
+  "version": "1.0.0",
+  "description": "Développer un site proposant le menu de 4 grands restaurants parisiens.",
+  "main": "index.js",
+    "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+  },
+  
+  "author": "",
+  "license": "ISC"
+}
