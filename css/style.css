@@ -1,8 +1,10 @@
+/* style menu principal */
+/*Couleurs : Primaire : #9356DC  Secondaire :#FF79DA Tertiaire : #99E2D0 */ 
 body{
-        font-family: 'Roboto', 'Shrikhand';
+    font-family: 'Roboto', 'Shrikhand';
 }
 
-/*Header*/
+/* Header */
 header{   
     font-family: 'Shrikhand';
     display: block;
@@ -29,10 +31,9 @@ header img{
 
 .local__ville {
     margin-left: 20px;
-    font-weight: bold;
 }
  
-/*  Reservation */
+/* Reservation */
 #reservation{ 
     width: 100%;
     padding-top: 30px;  
@@ -74,8 +75,8 @@ header img{
     background: linear-gradient(#ff79DA,#9356DC);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 } 
-/*  Fonctionnement */
 
+/* Fonctionnement */
 #fonction{
     background-color: white;
     display: grid;
@@ -94,7 +95,10 @@ header img{
     border-radius: 20px;
     margin: 0 0 0 12px;
 }
-
+#fonction h2{
+    width: 100%;
+    margin-bottom: 0px;
+}
 #fonction .fonction__numero{
     background-color: #9356DC;
     color: white;
@@ -110,43 +114,36 @@ header img{
 }
 
 #fonction .Box:hover {
-   cursor: pointer;
-   box-shadow: 3px 3px 10px #d3c0c0;
-}
-#fonction :hover .Box {
-    color: #9356DC;
-    cursor: pointer; 
-}
- #fonction :hover .fonction__icone {
-    color: #9356DC;
     cursor: pointer;
+    box-shadow: 3px 3px 10px #e2dfe6;
 }
- #fonction :hover .fonction__icone .fas {
+
+#fonction :hover .fonction__icone .fas {
     color: #9356DC; 
 }
 
- /*Restaurants*/
-
- #Restaurants {
+ /* Restaurants */
+#Restaurants {
     background-color: #fafafa;
     margin-top: 50px;
  }
 
- #Restaurants h2{
+#Restaurants h2{
     margin-left: 20px;
-    padding-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 0px;
 }
 
 #Restaurants .Box_main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 300px);
-    gap: 1rem 1rem;
-    background-color: #fafafa;  
+    background-color: #fafafa; 
+    padding-bottom: 50px; 
 }  
 
 #Restaurants .Box{
-     margin: 20px;
+    margin: 20px;
     border-radius: 2rem 2rem 2rem 2rem;
 }
 
@@ -186,7 +183,7 @@ header img{
     justify-content: space-between;
     background-color: white;
     border-radius: 0rem 0rem 2rem 2rem;
- }
+}
 
  .restaurant__carte__info__nom {
     display: flex;
@@ -194,29 +191,29 @@ header img{
     color: black;
     line-height: 0;
     margin-left: 20px;
- }
+}
 
- #Restaurants a{
+#Restaurants a{
     text-decoration: none;
- }
+}
 
- #Restaurants .coeur{
+#Restaurants .coeur{
     position: relative;
     display: flex;
     align-items: center;
     align-content: center;
     margin-right: 60px;
-    padding-top: 15px;
+    padding-bottom: 10px;
     color: black;  
- }
+}
 
 .coeur__2{
     font-size: 1px;
     position: absolute;
     z-index: 2;
-    color: white; 
-     
-    }
+    color: white;   
+}
+
 .coeur__1{
     font-size: 15px;
     position: absolute;  
@@ -231,12 +228,13 @@ header img{
     opacity: 0;
 }
 
-    /*footer*/
+/* footer */
 footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #464444;   
+    background-color: #464444; 
+    padding-bottom: 30px;  
 }
 
 .footer__logo{
@@ -244,7 +242,7 @@ footer {
     font-style: italic;
     color :white;
     font-weight: normal;
-    margin: 0 0 0 20px;
+    margin: 20px 0 20px 20px;
 }
 
 footer .Box{
@@ -260,15 +258,19 @@ footer h4 {
     margin: 0 0 0 20px; 
 }
 
-footer .fas {
-    margin-right: 10px;
+.fa-utensils {
+    margin-right: 10px; 
 }
+.fa-hands-helping{
+  margin-right: 10px;  
+} 
 
 footer .Box :hover {
     cursor: pointer;
     text-decoration-line: underline;
 }
-@media (min-width:800px)
+
+@media (min-width:600px)
 {
     #Restaurants .Box_main {
         display: grid;
@@ -276,25 +278,35 @@ footer .Box :hover {
         grid-template-rows: repeat(2, 300px);
         gap: 1rem 1rem;
     }
+}
+
+@media (min-width:768px)
+{
     #fonction{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    #fonction h2{
-            width: 100%;
-            margin-bottom: 0px;
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-content: center;
     }
     #fonction .Box{
-            width: 31%;
+        width: 100%;
     }
 }
-    
 
-/*@media screen and (max-width: 1000px) and (min-width: 800px)
-display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    gap: 1rem 1rem;
-    background-color: #fafafa;  
-}  */
+@media (min-width:835px) and (max-width:1024px){
+#fonction .Box{
+    width: 30.7%;
+    }
+}
+
+@media (min-width:1025px) {
+    #fonction{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-content: center;
+    }
+    #fonction .Box{
+        width: 31.2%;
+    }
+}

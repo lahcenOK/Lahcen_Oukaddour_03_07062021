@@ -6,7 +6,15 @@
     "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/styles.css"
   },
-  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahcenOK/OukaddourLahcen_3_07062021.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lahcenOK/OukaddourLahcen_3_07062021/issues"
+  },
+  "homepage": "https://github.com/lahcenOK/OukaddourLahcen_3_07062021#readme"
 }
+

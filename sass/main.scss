@@ -8,8 +8,7 @@
     }
 }
 
-
-/*Animation coeur menu principal*/
+/*Animation coeur menu principal et menu restaurant*/
 @keyframes fadeinc {
     from {
       opacity: 0;
@@ -19,43 +18,45 @@
     }
   }
 
-/*Animation menu restaurant */
+/*Animation menu restaurant -selection d'un plat */
 .carte__type__contenu:hover{   
     cursor: pointer;
-    .carte__type__menu { 
-        .carte__type__plats{  
+        .carte__type__menu {    
+        .carte__type__plats{ 
             h3{   
-                width: 290px;    
+                width: 210px;    
                 overflow: hidden;
                 white-space: nowrap; 
                 text-overflow: ellipsis; 
             }
             h4{ 
-                width: 250px;
+                width: 210px;
                 overflow: hidden;
                 white-space: nowrap; 
                 text-overflow: ellipsis; 
             }       
         }
         .carte__type__prix{  
-            white-space: nowrap;
-            text-overflow: ellipsis;   
+           white-space: nowrap;
+            text-overflow: ellipsis;  
+            width: 5px;
         } 
     }
     .carte__type__validation{  
         margin-right: 0px;
         width: 70px;
-        transition: margin-right 0.5s;   
+        transition: margin-right 0.5s; 
         .cercle{  
             .fas{  
                 animation-name:spin;
                 animation-duration: 500ms;
-                animation-timing-function: linear;
+                animation-timing-function: linear;  
             }
         }
     }
 }
 
+/*Rotation cercle de validation*/
 @keyframes spin { 
     from { 
         transform: rotate(0deg);  
@@ -65,7 +66,7 @@
     }
 }
 
-
+/*Animation menu restaurant -Apparition progressive */
 @keyframes fadein {
     0%{ 
         opacity:0;
@@ -82,13 +83,9 @@
         animation-duration: 250ms;
         animation-timing-function: linear;
         animation-delay: #{$i * 0.2}s;
-        animation-iteration-count: 1;
         animation-direction: normal;
-        animation-fill-mode: none;
-        animation-play-state: running;
         animation-name: fadein;
     }
-    
 } 
             
  
