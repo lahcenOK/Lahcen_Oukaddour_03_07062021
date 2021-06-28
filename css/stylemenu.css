@@ -188,7 +188,7 @@ header .fas{
   font-weight: bold;
   margin: 0px 10px 13px 0px;
 }
-/* Chois du pla t*/
+/* Chois du plat */
 .carte__type__validation{
   height:70px;
   margin-right: -70px;
@@ -213,6 +213,7 @@ header .fas{
 .cercle .fas{
   margin-left: 5px;
 }
+
  /* bouton de commande */
 #cartes .bouton__commande{
   display: flex;

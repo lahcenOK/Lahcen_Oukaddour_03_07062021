@@ -116,6 +116,7 @@ header img{
 #fonction .Box:hover {
     cursor: pointer;
     box-shadow: 3px 3px 10px #e2dfe6;
+    background: white;
 }
 
 #fonction :hover .fonction__icone .fas {
@@ -198,7 +199,6 @@ header img{
 }
 
 #Restaurants .coeur{
-    position: relative;
     display: flex;
     align-items: center;
     align-content: center;
@@ -208,7 +208,7 @@ header img{
 }
 
 .coeur__2{
-    font-size: 1px;
+    font-size: 0px;
     position: absolute;
     z-index: 2;
     color: white;   
@@ -258,12 +258,9 @@ footer h4 {
     margin: 0 0 0 20px; 
 }
 
-.fa-utensils {
+.fa-utensils, .fa-hands-helping{
     margin-right: 10px; 
 }
-.fa-hands-helping{
-  margin-right: 10px;  
-} 
 
 footer .Box :hover {
     cursor: pointer;
