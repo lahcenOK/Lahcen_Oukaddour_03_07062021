@@ -66,7 +66,7 @@
     transform: rotate(-360deg);
   }
 }
-/*Animation bouton explore du menu principal*/
+/* Animation bouton explore du menu principal */
 .reservation__explore {
   transform: scale(1);
   transition: transform 400ms;
@@ -75,7 +75,7 @@
   transform: scale(1.15);
 }
 
-/*Animation coeur menu principal et menu restaurant*/
+/* Animation coeur menu principal et menu restaurant */
 @keyframes fadeinc {
   from {
     opacity: 0;
@@ -130,84 +130,164 @@
     transform: translateY(0px);
   }
 }
+.delay-0 {
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+  animation-direction: normal;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+}
+
 .delay-1 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 0.2s;
+  animation-delay: 2.75s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-2 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 0.4s;
+  animation-delay: 3s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-3 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 0.6s;
+  animation-delay: 3.25s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-4 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 0.8s;
+  animation-delay: 3.5s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-5 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 1s;
+  animation-delay: 3.75s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-6 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 1.2s;
+  animation-delay: 4s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-7 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 1.4s;
+  animation-delay: 4.25s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-8 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 1.6s;
+  animation-delay: 4.5s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-9 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 1.8s;
+  animation-delay: 4.75s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
 }
 
 .delay-10 {
   animation-duration: 250ms;
   animation-timing-function: linear;
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-direction: normal;
   animation-name: fadein;
+  animation-fill-mode: backwards;
+}
+
+.delay-11 {
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-delay: 5.25s;
+  animation-direction: normal;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+}
+
+.delay-12 {
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-delay: 5.5s;
+  animation-direction: normal;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #464444;
+  padding-bottom: 30px;
+}
+
+.footer__logo {
+  font-family: "Shrikhand";
+  font-style: italic;
+  color: white;
+  font-weight: normal;
+  margin: 20px 0 20px 20px;
+}
+
+footer .Box {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+}
+
+footer h4 {
+  padding: 0;
+  color: white;
+  font-weight: normal;
+  margin: 0 0 0 20px;
+}
+
+footer a {
+  text-decoration-line: noe;
+}
+
+footer .fa-utensils, .fa-hands-helping {
+  margin-right: 10px;
+}
+
+footer .Box :hover {
+  cursor: pointer;
+  text-decoration-line: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

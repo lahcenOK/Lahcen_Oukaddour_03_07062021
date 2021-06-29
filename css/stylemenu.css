@@ -126,7 +126,7 @@ header .fas{
   border-bottom-width: 10px;
 }
 
-/*soulignement titre  */
+/*Soulignement titre  */
 .carte__type h2::after {
   content: "";
   display: block;
@@ -214,7 +214,7 @@ header .fas{
   margin-left: 5px;
 }
 
- /* bouton de commande */
+ /* Bouton de commande */
 #cartes .bouton__commande{
   display: flex;
   justify-content: center;
@@ -242,48 +242,7 @@ header .fas{
  transform: scale(1.15);
 }
 
-/* footer */
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #464444; 
-  padding-bottom: 30px;
-}
-
-.footer__logo{
-  font-family:'Shrikhand';
-  color :white;
-  font-weight: normal;
-  margin: 20px 0 20px 20px;
-}
-
-footer .Box{
-  display: flex; 
-  flex-direction: column;
-  line-height: 150%;
-}
-
-footer h4 {
-  padding: 0;
-  color :white;
-  font-weight: normal;
-  margin: 0 0 0 20px; 
-}
-
-footer a {
-text-decoration: none;
-}
-
-footer .fas {
-  margin-right: 10px;
-}
-
-footer .Box :hover {
-  cursor: pointer;
-  text-decoration-line: underline;
-}
-
+/* Media querry */
 @media (min-width:737px){
 .carte__type__contenu{
   width: 100%;
