@@ -228,7 +228,7 @@ header img{
     opacity: 0;
 }
 
-/* Media querry */
+/* Media queries */
 @media (min-width:600px){
     #Restaurants .Box_main {
         display: grid;

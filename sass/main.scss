@@ -89,7 +89,7 @@
     }
   }
 
-/*Animation menu restaurant -selection d'un plat */
+/* Animation menu restaurant -selection d'un plat */
 .carte__type__contenu:hover{   
     cursor: pointer;
         .carte__type__menu {    
@@ -121,7 +121,7 @@
     }
 }
 
-/*Rotation cercle de validation*/
+/* Rotation cercle de validation */
 @keyframes spin { 
     from { 
         transform: rotate(0deg);  
@@ -131,7 +131,7 @@
     }
 }
 
-/*Animation menu restaurant -Apparition progressive */
+/* Animation menu restaurant -Apparition progressive */
 @keyframes fadein {
     0%{ 
         opacity:0;

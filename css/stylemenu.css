@@ -1,5 +1,5 @@
 /* Style menu des quatres  restaurants */  
-/*Couleurs : Primaire : #9356DC    Secondaire :#FF79DA Tertiaire : #99E2D0 */  
+/*Couleurs : Primaire : #9356DC  Secondaire :#FF79DA Tertiaire : #99E2D0 */  
 
 body{
   margin :0;
@@ -7,7 +7,7 @@ body{
   font-family: 'Roboto', 'Shrikhand';
 }
 
-/*Header*/
+/* Heade r*/
 .header{   
   font-family: 'Shrikhand';
   display: block;
@@ -126,7 +126,7 @@ header .fas{
   border-bottom-width: 10px;
 }
 
-/*Soulignement titre  */
+/* Soulignement titre  */
 .carte__type h2::after {
   content: "";
   display: block;
@@ -242,7 +242,7 @@ header .fas{
  transform: scale(1.15);
 }
 
-/* Media querry */
+/* Media queries */
 @media (min-width:737px){
 .carte__type__contenu{
   width: 100%;
