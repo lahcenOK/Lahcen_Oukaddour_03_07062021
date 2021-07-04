@@ -70,7 +70,7 @@ header .fas{
   display: flex;
   justify-content: space-between;
   font-family: 'Shrikhand';
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal; 
 }
 
@@ -243,25 +243,56 @@ header .fas{
 }
 
 /* Media queries */
+@media (max-width:320px){
+  .carte__type__contenu{
+    width: 100%;
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: small;
+  }
+  .cartes__titre__coeur
+  { 
+    margin-right: 30px;
+  }
+  .carte__type__plats h3,h4{
+    padding-top: 10px;
+  }
+}
+@media (max-width:375px){
+  .cartes__titre {
+  font-size: 16px;}
+}
+
 @media (min-width:737px){
-.carte__type__contenu{
-  width: 100%;
-  height: 70px;
-  margin-right: 0px 25px 0px 25px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  .carte__type__contenu{
+    width: 100%;
+    height: 70px;
+    margin: 10px 15px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .cartes__titre__coeur
+  { 
+    margin-right: 50px;
   }
 }
 
 @media (min-width:900px){
-.carte__type__contenu{
-  width: 100%;
+  .carte__type__contenu{
+    width: 100%;
+  }
+  .cartes__titre__coeur
+  { 
+    margin-right: 80px;
   }
 }
 
 @media (min-width:1024px){
   .carte__type__contenu{
-    width :31.1%;
+    width :31%;
   }
 }

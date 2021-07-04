@@ -77,11 +77,13 @@
 
 /* Animation coeur menu principal et menu restaurant */
 @keyframes fadeinc {
-  from {
+  0% {
     opacity: 0;
+    transform: scale(0);
   }
-  to {
+  100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 /* Animation menu restaurant -selection d'un plat */
@@ -89,7 +91,7 @@
   cursor: pointer;
 }
 .carte__type__contenu:hover .carte__type__menu .carte__type__plats h3, .carte__type__contenu:hover .carte__type__menu .carte__type__plats h4 {
-  width: 210px;
+  width: 194px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -278,7 +280,7 @@ footer h4 {
 }
 
 footer a {
-  text-decoration-line: noe;
+  text-decoration-line: none;
 }
 
 footer .fa-utensils, .fa-hands-helping {
