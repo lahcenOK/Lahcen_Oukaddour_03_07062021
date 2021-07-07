@@ -89,7 +89,7 @@ header .fas{
   z-index: 2;
   color: white; 
   transform: scale(1);
-  background: -webkit-linear-gradient(#FF79DA,#9356DC);
+  background: -webkit-linear-gradient( 45deg,#FF79DA 5%,#9356DC 90%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
