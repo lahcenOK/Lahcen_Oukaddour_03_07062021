@@ -88,16 +88,20 @@ header .fas{
   position: absolute;
   z-index: 2;
   color: white; 
+  transform: scale(0);
+  background: -webkit-linear-gradient(#FF79DA,#9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .cartes__titre__coeur .far{
   font-size: 30px;
-  position: absolute;  
+  position: absolute; 
 }
 
 .cartes__titre__coeur:hover .fas{
   font-size: 30px;
-  color: #C968DB;
   animation: fadeinc 3s;
 }
 

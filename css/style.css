@@ -113,9 +113,9 @@ header img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f3f3f3;
+    background-color: #fafafa;
     font-weight: bold;
-    box-shadow: 0 0 10px rgb(206, 206, 207);
+    box-shadow: 0 0 10px rgb(222, 214, 228);
     border-radius: 20px;
     margin: 0 0 0 12px;
 }
@@ -140,7 +140,7 @@ header img{
 #fonction .Box:hover {
     cursor: pointer;
     box-shadow: 3px 3px 10px #e2dfe6;
-    background: #f2f0f3; ;
+    background-color: rgb(236, 224, 245);
 }
 
 #fonction :hover .fonction__icone .fas {
@@ -228,7 +228,7 @@ header img{
     align-content: center;
     margin-right: 60px;
     padding-bottom: 20px;
-    color: black;  
+    color: black;
     position: relative;
 }
 
@@ -236,9 +236,14 @@ header img{
     font-size: 0px;
     position: absolute;
     z-index: 2;
-    color: white; 
-}
-
+    text-decoration: white; 
+    transform: scale(0);
+    background: -webkit-linear-gradient( #FF79DA , #9356DC );
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+   
 .coeur__1{
     font-size: 15px;
     position: absolute;  
@@ -246,12 +251,13 @@ header img{
 
 .coeur:hover .coeur__2{
     font-size: 15px;
-    color: #C968DB;
-    animation: fadeinc 3s;  
-}
+    animation: fadeinc 3s; 
+   
+    }
 
 .coeur:hover .coeur__1{
     opacity: 0; 
+     
 }
 
 /* Media queries */
