@@ -82,10 +82,12 @@
 /* Animation coeur menu principal et menu restaurant */
 @keyframes fadeinc {
     0% {
+        opacity: 1;
         transform: scale(0);
     }
     100% {
-        transform: scale(1);  
+        transform: scale(1);
+        opacity: 1;    
     }
 }
 

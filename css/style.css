@@ -236,9 +236,8 @@ header img{
     font-size: 0px;
     position: absolute;
     z-index: 2;
-    text-decoration: white; 
-    transform: scale(0);
-    background: -webkit-linear-gradient( #FF79DA , #9356DC );
+    transform: scale(1);
+    background: -webkit-linear-gradient(#FF79DA,#9356DC);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -251,9 +250,8 @@ header img{
 
 .coeur:hover .coeur__2{
     font-size: 15px;
-    animation: fadeinc 3s; 
-   
-    }
+    animation: fadeinc 3s;
+}
 
 .coeur:hover .coeur__1{
     opacity: 0; 
